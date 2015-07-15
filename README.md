@@ -1,5 +1,5 @@
 # status
 Ethereum Status Site
 
-# Requirements
+# Dependencies
 * bootstrap 3.3.5
