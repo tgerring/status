@@ -1,0 +1,36 @@
+extends layouts/main
+
+block content
+  div.container
+    img.logo(src='images/logo.png')
+    a.stats-link(href='https://stats.ethdev.com',role='button')
+      = ' Network Stats'
+    table.table.table-condensed.status-table
+      thead
+        tr
+      tbody
+        tr
+          td
+            p.btn.btn-default.btn-block(disabled='disabled') 2015-07-17
+          td
+            a.btn.btn-danger.btn-block.active(href='alert.html',role='button')
+              span.glyphicon.glyphicon-alert(aria-hidden='true') 
+              = ' Go client 0.9.36 Severe DoS'
+          td
+            a.btn.btn-default.btn-block(href='https://github.com/ethereum/go-ethereum/releases/tag/v0.9.38',role='button')
+              span.glyphicon.glyphicon-download(aria-hidden='true')
+              = ' New version'
+        tr
+          td
+            p.btn.btn-default.btn-block.active(disabled='disabled') 2015-07-03
+          td
+            p.btn.btn-success.btn-block.active(disabled='disabled')
+              span.glyphicon.glyphicon-ok(aria-hidden='true')
+              = ' Network stable'
+        tr
+          td
+            p.btn.btn-default.btn-block.active(disabled='disabled') 2015-07-04
+          td
+            p.btn.btn-danger.btn-block.active(disabled='disabled')
+              span.glyphicon.glyphicon-alert(aria-hidden='true')
+              = ' Go client 0.9.34 accepted invalid blocks'

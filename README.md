@@ -2,4 +2,12 @@
 Ethereum Status Site
 
 # Dependencies
-* bootstrap 3.3.5
+* npm
+* gulp (`sudo npm install -g gulp`)
+
+# Build
+```
+npm install
+gulp build
+open build/index.html
+```

@@ -1,0 +1,26 @@
+extends layouts/main
+
+block content
+  div.container
+    img.logo(src='images/logo.png')
+
+    h1
+      strong 2015-07-17 Go client 0.9.36 Denial-of-Service attack
+    h3
+      strong Is my Ether safe?
+    p
+      strong Yes.
+      = ' This issue did not compromise the integrity of the blockchain, only availability of nodes.'
+    h3
+      strong What happened?
+    p
+      | A denial-of-service attack was discovered in the Go client, enabling a malicious miner to mine a block that would crash any Go client attemping to process it. The Go client would panic due to not properly handling errors returned by the EC recover operation that is executed on every tx in a block.
+    h3
+      strong What is being done?
+    p
+      | This issue is fixed in version 0.9.38 of the Go client.
+    a.btn.btn-default(href='https://github.com/ethereum/go-ethereum/releases/tag/v0.9.38',role='button')
+      span.glyphicon.glyphicon-download(aria-hidden='true')
+      = ' New version'
+    br
+    br
